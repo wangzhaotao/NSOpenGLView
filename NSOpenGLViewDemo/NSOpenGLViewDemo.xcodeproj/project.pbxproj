@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E41773923BB1F6F00C480B5 /* IUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41773823BB1F6F00C480B5 /* IUtil.m */; };
+		8E41773C23BB1FED00C480B5 /* WTCameraCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E41773B23BB1FED00C480B5 /* WTCameraCaptureManager.m */; };
+		8E46732A23BAE47C001A6727 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E46732923BAE47C001A6727 /* AppDelegate.m */; };
+		8E46732C23BAE47D001A6727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E46732B23BAE47D001A6727 /* Assets.xcassets */; };
+		8E46732F23BAE47D001A6727 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E46732D23BAE47D001A6727 /* MainMenu.xib */; };
+		8E46733223BAE47D001A6727 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E46733123BAE47D001A6727 /* main.m */; };
+		8E46733D23BAE47D001A6727 /* NSOpenGLViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E46733C23BAE47D001A6727 /* NSOpenGLViewDemoTests.m */; };
+		8E46734823BAE47D001A6727 /* NSOpenGLViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E46734723BAE47D001A6727 /* NSOpenGLViewDemoUITests.m */; };
+		8E46735B23BAE4EF001A6727 /* WTRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E46735923BAE4EF001A6727 /* WTRootVC.m */; };
+		8E46735C23BAE4EF001A6727 /* WTRootVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E46735A23BAE4EF001A6727 /* WTRootVC.xib */; };
+		8E46736F23BAE55F001A6727 /* container.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8E46736023BAE55F001A6727 /* container.jpg */; };
+		8E46737023BAE55F001A6727 /* Shader.vs in Resources */ = {isa = PBXBuildFile; fileRef = 8E46736123BAE55F001A6727 /* Shader.vs */; };
+		8E46737123BAE55F001A6727 /* Shader.frag in Resources */ = {isa = PBXBuildFile; fileRef = 8E46736223BAE55F001A6727 /* Shader.frag */; };
+		8E46737223BAE55F001A6727 /* imageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E46736423BAE55F001A6727 /* imageUtil.m */; };
+		8E46737323BAE55F001A6727 /* sourceUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E46736623BAE55F001A6727 /* sourceUtil.c */; };
+		8E46737423BAE55F001A6727 /* modelUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E46736823BAE55F001A6727 /* modelUtil.c */; };
+		8E46737523BAE55F001A6727 /* vectorUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E46736B23BAE55F001A6727 /* vectorUtil.c */; };
+		8E46737623BAE55F001A6727 /* matrixUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E46736D23BAE55F001A6727 /* matrixUtil.c */; };
+		8E46737B23BAE56E001A6727 /* OpenGLRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E46737723BAE56E001A6727 /* OpenGLRenderer.m */; };
+		8E46737C23BAE56E001A6727 /* VideoGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E46737823BAE56E001A6727 /* VideoGLView.m */; };
+		F7276007175E99BC8E9F9FE0 /* libPods-NSOpenGLViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9E125263508A1690D9A940 /* libPods-NSOpenGLViewDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E46733923BAE47D001A6727 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E46731D23BAE47C001A6727 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E46732423BAE47C001A6727;
+			remoteInfo = NSOpenGLViewDemo;
+		};
+		8E46734423BAE47D001A6727 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E46731D23BAE47C001A6727 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E46732423BAE47C001A6727;
+			remoteInfo = NSOpenGLViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1EFB029002D6A1BE1FAB9647 /* Pods-NSOpenGLViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSOpenGLViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-NSOpenGLViewDemo/Pods-NSOpenGLViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4B9E125263508A1690D9A940 /* libPods-NSOpenGLViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NSOpenGLViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		608D5B66A29937EEFF6CBDEA /* Pods-NSOpenGLViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSOpenGLViewDemo.release.xcconfig"; path = "Target Support Files/Pods-NSOpenGLViewDemo/Pods-NSOpenGLViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8E41773723BB1F6F00C480B5 /* IUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IUtil.h; sourceTree = "<group>"; };
+		8E41773823BB1F6F00C480B5 /* IUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IUtil.m; sourceTree = "<group>"; };
+		8E41773A23BB1FED00C480B5 /* WTCameraCaptureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTCameraCaptureManager.h; sourceTree = "<group>"; };
+		8E41773B23BB1FED00C480B5 /* WTCameraCaptureManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTCameraCaptureManager.m; sourceTree = "<group>"; };
+		8E46732523BAE47C001A6727 /* NSOpenGLViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSOpenGLViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E46732823BAE47C001A6727 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8E46732923BAE47C001A6727 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8E46732B23BAE47D001A6727 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E46732E23BAE47D001A6727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8E46733023BAE47D001A6727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E46733123BAE47D001A6727 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E46733323BAE47D001A6727 /* NSOpenGLViewDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NSOpenGLViewDemo.entitlements; sourceTree = "<group>"; };
+		8E46733823BAE47D001A6727 /* NSOpenGLViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSOpenGLViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E46733C23BAE47D001A6727 /* NSOpenGLViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOpenGLViewDemoTests.m; sourceTree = "<group>"; };
+		8E46733E23BAE47D001A6727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E46734323BAE47D001A6727 /* NSOpenGLViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSOpenGLViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E46734723BAE47D001A6727 /* NSOpenGLViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOpenGLViewDemoUITests.m; sourceTree = "<group>"; };
+		8E46734923BAE47D001A6727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E46735823BAE4EF001A6727 /* WTRootVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTRootVC.h; sourceTree = "<group>"; };
+		8E46735923BAE4EF001A6727 /* WTRootVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTRootVC.m; sourceTree = "<group>"; };
+		8E46735A23BAE4EF001A6727 /* WTRootVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WTRootVC.xib; sourceTree = "<group>"; };
+		8E46736023BAE55F001A6727 /* container.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = container.jpg; sourceTree = "<group>"; };
+		8E46736123BAE55F001A6727 /* Shader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vs; sourceTree = "<group>"; };
+		8E46736223BAE55F001A6727 /* Shader.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.frag; sourceTree = "<group>"; };
+		8E46736423BAE55F001A6727 /* imageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageUtil.m; sourceTree = "<group>"; };
+		8E46736523BAE55F001A6727 /* glUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glUtil.h; sourceTree = "<group>"; };
+		8E46736623BAE55F001A6727 /* sourceUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sourceUtil.c; sourceTree = "<group>"; };
+		8E46736723BAE55F001A6727 /* vectorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vectorUtil.h; sourceTree = "<group>"; };
+		8E46736823BAE55F001A6727 /* modelUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = modelUtil.c; sourceTree = "<group>"; };
+		8E46736923BAE55F001A6727 /* matrixUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrixUtil.h; sourceTree = "<group>"; };
+		8E46736A23BAE55F001A6727 /* imageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageUtil.h; sourceTree = "<group>"; };
+		8E46736B23BAE55F001A6727 /* vectorUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vectorUtil.c; sourceTree = "<group>"; };
+		8E46736C23BAE55F001A6727 /* sourceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sourceUtil.h; sourceTree = "<group>"; };
+		8E46736D23BAE55F001A6727 /* matrixUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = matrixUtil.c; sourceTree = "<group>"; };
+		8E46736E23BAE55F001A6727 /* modelUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modelUtil.h; sourceTree = "<group>"; };
+		8E46737723BAE56E001A6727 /* OpenGLRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLRenderer.m; sourceTree = "<group>"; };
+		8E46737823BAE56E001A6727 /* VideoGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoGLView.m; sourceTree = "<group>"; };
+		8E46737923BAE56E001A6727 /* OpenGLRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLRenderer.h; sourceTree = "<group>"; };
+		8E46737A23BAE56E001A6727 /* VideoGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoGLView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E46732223BAE47C001A6727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7276007175E99BC8E9F9FE0 /* libPods-NSOpenGLViewDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E46733523BAE47D001A6727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E46734023BAE47D001A6727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E46731C23BAE47C001A6727 = {
+			isa = PBXGroup;
+			children = (
+				8E46732723BAE47C001A6727 /* NSOpenGLViewDemo */,
+				8E46733B23BAE47D001A6727 /* NSOpenGLViewDemoTests */,
+				8E46734623BAE47D001A6727 /* NSOpenGLViewDemoUITests */,
+				8E46732623BAE47C001A6727 /* Products */,
+				A61997D2533BEAD634C43890 /* Pods */,
+				E357CE7D3A8FDEDF75065DF2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8E46732623BAE47C001A6727 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E46732523BAE47C001A6727 /* NSOpenGLViewDemo.app */,
+				8E46733823BAE47D001A6727 /* NSOpenGLViewDemoTests.xctest */,
+				8E46734323BAE47D001A6727 /* NSOpenGLViewDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E46732723BAE47C001A6727 /* NSOpenGLViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8E46735E23BAE52E001A6727 /* NSOpenGLViewPlayer */,
+				8E46732823BAE47C001A6727 /* AppDelegate.h */,
+				8E46732923BAE47C001A6727 /* AppDelegate.m */,
+				8E46735823BAE4EF001A6727 /* WTRootVC.h */,
+				8E46735923BAE4EF001A6727 /* WTRootVC.m */,
+				8E46735A23BAE4EF001A6727 /* WTRootVC.xib */,
+				8E41773723BB1F6F00C480B5 /* IUtil.h */,
+				8E41773823BB1F6F00C480B5 /* IUtil.m */,
+				8E41773A23BB1FED00C480B5 /* WTCameraCaptureManager.h */,
+				8E41773B23BB1FED00C480B5 /* WTCameraCaptureManager.m */,
+				8E46735D23BAE4F5001A6727 /* supports */,
+				8E46732D23BAE47D001A6727 /* MainMenu.xib */,
+				8E46733023BAE47D001A6727 /* Info.plist */,
+				8E46733323BAE47D001A6727 /* NSOpenGLViewDemo.entitlements */,
+			);
+			path = NSOpenGLViewDemo;
+			sourceTree = "<group>";
+		};
+		8E46733B23BAE47D001A6727 /* NSOpenGLViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E46733C23BAE47D001A6727 /* NSOpenGLViewDemoTests.m */,
+				8E46733E23BAE47D001A6727 /* Info.plist */,
+			);
+			path = NSOpenGLViewDemoTests;
+			sourceTree = "<group>";
+		};
+		8E46734623BAE47D001A6727 /* NSOpenGLViewDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8E46734723BAE47D001A6727 /* NSOpenGLViewDemoUITests.m */,
+				8E46734923BAE47D001A6727 /* Info.plist */,
+			);
+			path = NSOpenGLViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		8E46735D23BAE4F5001A6727 /* supports */ = {
+			isa = PBXGroup;
+			children = (
+				8E46732B23BAE47D001A6727 /* Assets.xcassets */,
+				8E46733123BAE47D001A6727 /* main.m */,
+			);
+			path = supports;
+			sourceTree = "<group>";
+		};
+		8E46735E23BAE52E001A6727 /* NSOpenGLViewPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				8E46735F23BAE55F001A6727 /* Shaders */,
+				8E46736323BAE55F001A6727 /* Utility */,
+				8E46737923BAE56E001A6727 /* OpenGLRenderer.h */,
+				8E46737723BAE56E001A6727 /* OpenGLRenderer.m */,
+				8E46737A23BAE56E001A6727 /* VideoGLView.h */,
+				8E46737823BAE56E001A6727 /* VideoGLView.m */,
+			);
+			path = NSOpenGLViewPlayer;
+			sourceTree = "<group>";
+		};
+		8E46735F23BAE55F001A6727 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				8E46736023BAE55F001A6727 /* container.jpg */,
+				8E46736123BAE55F001A6727 /* Shader.vs */,
+				8E46736223BAE55F001A6727 /* Shader.frag */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		8E46736323BAE55F001A6727 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8E46736423BAE55F001A6727 /* imageUtil.m */,
+				8E46736523BAE55F001A6727 /* glUtil.h */,
+				8E46736623BAE55F001A6727 /* sourceUtil.c */,
+				8E46736723BAE55F001A6727 /* vectorUtil.h */,
+				8E46736823BAE55F001A6727 /* modelUtil.c */,
+				8E46736923BAE55F001A6727 /* matrixUtil.h */,
+				8E46736A23BAE55F001A6727 /* imageUtil.h */,
+				8E46736B23BAE55F001A6727 /* vectorUtil.c */,
+				8E46736C23BAE55F001A6727 /* sourceUtil.h */,
+				8E46736D23BAE55F001A6727 /* matrixUtil.c */,
+				8E46736E23BAE55F001A6727 /* modelUtil.h */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		A61997D2533BEAD634C43890 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1EFB029002D6A1BE1FAB9647 /* Pods-NSOpenGLViewDemo.debug.xcconfig */,
+				608D5B66A29937EEFF6CBDEA /* Pods-NSOpenGLViewDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E357CE7D3A8FDEDF75065DF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B9E125263508A1690D9A940 /* libPods-NSOpenGLViewDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E46732423BAE47C001A6727 /* NSOpenGLViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E46734C23BAE47D001A6727 /* Build configuration list for PBXNativeTarget "NSOpenGLViewDemo" */;
+			buildPhases = (
+				871269E6724C0A6C48FB329C /* [CP] Check Pods Manifest.lock */,
+				8E46732123BAE47C001A6727 /* Sources */,
+				8E46732223BAE47C001A6727 /* Frameworks */,
+				8E46732323BAE47C001A6727 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSOpenGLViewDemo;
+			productName = NSOpenGLViewDemo;
+			productReference = 8E46732523BAE47C001A6727 /* NSOpenGLViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E46733723BAE47D001A6727 /* NSOpenGLViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E46734F23BAE47D001A6727 /* Build configuration list for PBXNativeTarget "NSOpenGLViewDemoTests" */;
+			buildPhases = (
+				8E46733423BAE47D001A6727 /* Sources */,
+				8E46733523BAE47D001A6727 /* Frameworks */,
+				8E46733623BAE47D001A6727 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E46733A23BAE47D001A6727 /* PBXTargetDependency */,
+			);
+			name = NSOpenGLViewDemoTests;
+			productName = NSOpenGLViewDemoTests;
+			productReference = 8E46733823BAE47D001A6727 /* NSOpenGLViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8E46734223BAE47D001A6727 /* NSOpenGLViewDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E46735223BAE47D001A6727 /* Build configuration list for PBXNativeTarget "NSOpenGLViewDemoUITests" */;
+			buildPhases = (
+				8E46733F23BAE47D001A6727 /* Sources */,
+				8E46734023BAE47D001A6727 /* Frameworks */,
+				8E46734123BAE47D001A6727 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E46734523BAE47D001A6727 /* PBXTargetDependency */,
+			);
+			name = NSOpenGLViewDemoUITests;
+			productName = NSOpenGLViewDemoUITests;
+			productReference = 8E46734323BAE47D001A6727 /* NSOpenGLViewDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E46731D23BAE47C001A6727 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = wzt;
+				TargetAttributes = {
+					8E46732423BAE47C001A6727 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					8E46733723BAE47D001A6727 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 8E46732423BAE47C001A6727;
+					};
+					8E46734223BAE47D001A6727 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 8E46732423BAE47C001A6727;
+					};
+				};
+			};
+			buildConfigurationList = 8E46732023BAE47C001A6727 /* Build configuration list for PBXProject "NSOpenGLViewDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E46731C23BAE47C001A6727;
+			productRefGroup = 8E46732623BAE47C001A6727 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E46732423BAE47C001A6727 /* NSOpenGLViewDemo */,
+				8E46733723BAE47D001A6727 /* NSOpenGLViewDemoTests */,
+				8E46734223BAE47D001A6727 /* NSOpenGLViewDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E46732323BAE47C001A6727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E46737123BAE55F001A6727 /* Shader.frag in Resources */,
+				8E46732C23BAE47D001A6727 /* Assets.xcassets in Resources */,
+				8E46732F23BAE47D001A6727 /* MainMenu.xib in Resources */,
+				8E46735C23BAE4EF001A6727 /* WTRootVC.xib in Resources */,
+				8E46737023BAE55F001A6727 /* Shader.vs in Resources */,
+				8E46736F23BAE55F001A6727 /* container.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E46733623BAE47D001A6727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E46734123BAE47D001A6727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		871269E6724C0A6C48FB329C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NSOpenGLViewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E46732123BAE47C001A6727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E46737623BAE55F001A6727 /* matrixUtil.c in Sources */,
+				8E46737C23BAE56E001A6727 /* VideoGLView.m in Sources */,
+				8E41773C23BB1FED00C480B5 /* WTCameraCaptureManager.m in Sources */,
+				8E46733223BAE47D001A6727 /* main.m in Sources */,
+				8E46737523BAE55F001A6727 /* vectorUtil.c in Sources */,
+				8E46737423BAE55F001A6727 /* modelUtil.c in Sources */,
+				8E46737323BAE55F001A6727 /* sourceUtil.c in Sources */,
+				8E41773923BB1F6F00C480B5 /* IUtil.m in Sources */,
+				8E46735B23BAE4EF001A6727 /* WTRootVC.m in Sources */,
+				8E46732A23BAE47C001A6727 /* AppDelegate.m in Sources */,
+				8E46737223BAE55F001A6727 /* imageUtil.m in Sources */,
+				8E46737B23BAE56E001A6727 /* OpenGLRenderer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E46733423BAE47D001A6727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E46733D23BAE47D001A6727 /* NSOpenGLViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E46733F23BAE47D001A6727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E46734823BAE47D001A6727 /* NSOpenGLViewDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E46733A23BAE47D001A6727 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E46732423BAE47C001A6727 /* NSOpenGLViewDemo */;
+			targetProxy = 8E46733923BAE47D001A6727 /* PBXContainerItemProxy */;
+		};
+		8E46734523BAE47D001A6727 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E46732423BAE47C001A6727 /* NSOpenGLViewDemo */;
+			targetProxy = 8E46734423BAE47D001A6727 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8E46732D23BAE47D001A6727 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E46732E23BAE47D001A6727 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E46734A23BAE47D001A6727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8E46734B23BAE47D001A6727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8E46734D23BAE47D001A6727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EFB029002D6A1BE1FAB9647 /* Pods-NSOpenGLViewDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NSOpenGLViewDemo/NSOpenGLViewDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RNS9QEVKGH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = NSOpenGLViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzt.NSOpenGLViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8E46734E23BAE47D001A6727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 608D5B66A29937EEFF6CBDEA /* Pods-NSOpenGLViewDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NSOpenGLViewDemo/NSOpenGLViewDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RNS9QEVKGH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = NSOpenGLViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzt.NSOpenGLViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8E46735023BAE47D001A6727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RNS9QEVKGH;
+				INFOPLIST_FILE = NSOpenGLViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzt.NSOpenGLViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSOpenGLViewDemo.app/Contents/MacOS/NSOpenGLViewDemo";
+			};
+			name = Debug;
+		};
+		8E46735123BAE47D001A6727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RNS9QEVKGH;
+				INFOPLIST_FILE = NSOpenGLViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzt.NSOpenGLViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSOpenGLViewDemo.app/Contents/MacOS/NSOpenGLViewDemo";
+			};
+			name = Release;
+		};
+		8E46735323BAE47D001A6727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RNS9QEVKGH;
+				INFOPLIST_FILE = NSOpenGLViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzt.NSOpenGLViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NSOpenGLViewDemo;
+			};
+			name = Debug;
+		};
+		8E46735423BAE47D001A6727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RNS9QEVKGH;
+				INFOPLIST_FILE = NSOpenGLViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wzt.NSOpenGLViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NSOpenGLViewDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E46732023BAE47C001A6727 /* Build configuration list for PBXProject "NSOpenGLViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E46734A23BAE47D001A6727 /* Debug */,
+				8E46734B23BAE47D001A6727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E46734C23BAE47D001A6727 /* Build configuration list for PBXNativeTarget "NSOpenGLViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E46734D23BAE47D001A6727 /* Debug */,
+				8E46734E23BAE47D001A6727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E46734F23BAE47D001A6727 /* Build configuration list for PBXNativeTarget "NSOpenGLViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E46735023BAE47D001A6727 /* Debug */,
+				8E46735123BAE47D001A6727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E46735223BAE47D001A6727 /* Build configuration list for PBXNativeTarget "NSOpenGLViewDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E46735323BAE47D001A6727 /* Debug */,
+				8E46735423BAE47D001A6727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E46731D23BAE47C001A6727 /* Project object */;
+}

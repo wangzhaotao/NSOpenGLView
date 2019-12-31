@@ -1,0 +1,14 @@
+platform :osx, '10.9'
+
+inhibit_all_warnings!
+
+target 'NSOpenGLViewDemo' do
+    
+  pod 'Masonry'
+  #pod 'AFNetworking', '~> 3.1.0'
+  #pod 'SDWebImage' #, '~> 5.0'
+  #pod 'ffmpeg' #-- 自己已编译x86版本
+  #pod 'RealReachability' #不支持macos
+  #pod 'YYModel' #不支持x86_64架构
+
+end
